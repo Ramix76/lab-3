@@ -1,0 +1,248 @@
+*,html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.header {
+  background-color: rgba(255, 0, 0, 1);
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.header-content {
+  position: relative;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: 100%;
+}
+
+.logo {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-img {
+  margin-top: 0;
+  position: static;
+  height: 80px;
+  width: auto;
+}
+
+.titulo-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-align: right;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #8afa02;
+}
+
+.main {
+  background-image: url('https://1000marcas.net/wp-content/uploads/2021/06/Top-10-logotipos-de-bandas-de-rock.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 120px;
+  background-color: lightgray;
+}
+
+h1{
+  font-size: 35px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+  font-size: 25px;
+  font-family: fantasy;
+}
+
+h3{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+  scroll-margin-top: 120px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  width: 90%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+section.Principal{
+  background-color: #78afee;
+  position: static;
+  line-height: 2;
+}
+
+section.Cantantes{
+  line-height: 2;
+  background-color: #78afee;
+}
+
+section.Biografias{
+  line-height: 2;
+  background-color: #78afee;
+}
+
+#Biografias ul{
+  text-align: center;
+  list-style: none;
+}
+
+#Biografias a {
+  cursor: pointer !important;
+}
+
+section.Conciertos{
+  line-height: 2;
+  background-color: #78afee;
+}
+
+.card-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#Conciertos table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #000000;
+}
+
+#Conciertos th,
+#Conciertos td {
+  border: 2px solid #000000;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #f06e8e;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  background-color: #f06e8e;
+}
+
+tbody tr:hover {
+  background-color: #d0e7ff;
+}
+
+th {
+  font-weight: 600;
+}
+
+.About{
+  background-color: #78afee;
+  line-height: 2;
+}
+
+.footer{
+  text-align: right;
+}
+
+#button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #78afee;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  /* display: none; */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+#button:hover {
+  background-color: #5a8be3;
+}
+
